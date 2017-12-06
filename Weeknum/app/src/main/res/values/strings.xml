@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Weeknum</string>
+    <string name="today_button_title">Today</string>
 </resources>
