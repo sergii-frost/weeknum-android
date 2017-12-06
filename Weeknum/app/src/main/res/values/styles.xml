@@ -6,7 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <!--<item name="android:textViewStyle">@style/WeeknumTextViewStyle</item>-->
+        <item name="android:textViewStyle">@style/WeeknumTextViewStyle</item>
     </style>
 
     <style name="WeeknumTextViewStyle" parent="android:Widget.TextView">
