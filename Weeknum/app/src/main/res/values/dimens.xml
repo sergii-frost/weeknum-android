@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="zero_dimension">0dp</dimen>
+    <!--padding-->
+    <dimen name="padding_zero">@dimen/zero_dimension</dimen>
+    <dimen name="padding_xs">2dp</dimen>
+    <dimen name="padding_s">4dp</dimen>
+    <dimen name="padding_ms">6dp</dimen>
+    <dimen name="padding_m">8dp</dimen>
+    <dimen name="padding_l">16dp</dimen>
+    <dimen name="padding_xl">32dp</dimen>
+    <dimen name="padding_xxl">64dp</dimen>
+
+    <!--buttons-->
+    <dimen name="button_padding">10dp</dimen>
+    <dimen name="button_border">1dp</dimen>
+    <dimen name="button_rounded_corners">10dp</dimen>
+    <dimen name="button_no_rounded_corners">@dimen/zero_dimension</dimen>
+
+</resources>
