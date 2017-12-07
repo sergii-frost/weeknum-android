@@ -42,7 +42,6 @@ class DateWeekUtil {
             calendar.clear(Calendar.MINUTE)
             calendar.clear(Calendar.SECOND)
             calendar.clear(Calendar.MILLISECOND)
-            calendar.firstDayOfWeek = Calendar.MONDAY
             calendar.set(Calendar.DAY_OF_WEEK, calendar.firstDayOfWeek)
 
             return calendar
