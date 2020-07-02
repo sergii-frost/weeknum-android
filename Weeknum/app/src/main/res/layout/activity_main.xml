@@ -36,13 +36,25 @@
         app:layout_constraintGuide_end="@dimen/padding_l" />
 
     <TextView
+        android:id="@+id/weekDescriptionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_l"
+        android:gravity="center"
+        android:lines="1"
+        android:textSize="32sp"
+        app:layout_constraintLeft_toLeftOf="@id/startGuideline"
+        app:layout_constraintRight_toRightOf="@id/endGuideline"
+        app:layout_constraintTop_toTopOf="@id/topGuideline"
+        tools:text="01 Jan - 07 Jan" />
+
+    <TextView
         android:id="@+id/weekNumberTextView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="@dimen/padding_l"
         android:gravity="center"
         android:lines="1"
-        android:text="42"
         app:autoSizeMaxTextSize="400sp"
         app:autoSizeMinTextSize="80sp"
         app:autoSizeStepGranularity="2sp"
@@ -50,7 +62,8 @@
         app:layout_constraintBottom_toTopOf="@id/todayButton"
         app:layout_constraintLeft_toLeftOf="@id/startGuideline"
         app:layout_constraintRight_toRightOf="@id/endGuideline"
-        app:layout_constraintTop_toTopOf="@id/topGuideline" />
+        app:layout_constraintTop_toBottomOf="@id/weekDescriptionTextView"
+        tools:text="42" />
 
     <ImageButton
         android:id="@+id/previosWeekButton"
