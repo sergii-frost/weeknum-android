@@ -50,23 +50,26 @@
 
     <TextView
         android:id="@+id/weekNumberTextView"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:padding="@dimen/padding_xl"
         android:layout_marginBottom="@dimen/padding_l"
         android:gravity="center"
-        android:lines="1"
-        app:autoSizeMaxTextSize="400sp"
-        app:autoSizeMinTextSize="80sp"
-        app:autoSizeStepGranularity="2sp"
-        app:autoSizeTextType="uniform"
+        android:maxLines="1"
+        android:autoSizeMaxTextSize="400sp"
+        android:autoSizeMinTextSize="32sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
         app:layout_constraintBottom_toTopOf="@id/todayButton"
         app:layout_constraintLeft_toLeftOf="@id/startGuideline"
         app:layout_constraintRight_toRightOf="@id/endGuideline"
         app:layout_constraintTop_toBottomOf="@id/weekDescriptionTextView"
+        app:layout_constrainedWidth="true"
+        app:layout_constrainedHeight="true"
         tools:text="42" />
 
     <ImageButton
-        android:id="@+id/previosWeekButton"
+        android:id="@+id/previousWeekButton"
         style="@style/WeeknumWhiteBorderedButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -87,7 +90,7 @@
         android:text="@string/today_button_title"
         app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
         app:layout_constraintHorizontal_weight="3"
-        app:layout_constraintLeft_toRightOf="@id/previosWeekButton"
+        app:layout_constraintLeft_toRightOf="@id/previousWeekButton"
         app:layout_constraintRight_toLeftOf="@id/nextWeekButton" />
 
     <ImageButton

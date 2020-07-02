@@ -16,11 +16,15 @@ class MainActivity : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setupBindings()
-        updateWithDate(currentDate)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        updateWithDate(Date())
     }
 
     private fun setupBindings() {
-        previosWeekButton.setOnClickListener { updateWithDate(DateWeekUtil.previousWeekStart(currentDate)) }
+        previousWeekButton.setOnClickListener { updateWithDate(DateWeekUtil.previousWeekStart(currentDate)) }
         todayButton.setOnClickListener { updateWithDate(Date()) }
         nextWeekButton.setOnClickListener { updateWithDate(DateWeekUtil.nextWeekStart(currentDate)) }
     }
