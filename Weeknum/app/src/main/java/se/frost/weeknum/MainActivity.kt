@@ -20,7 +20,7 @@ class MainActivity : Activity() {
     }
 
     private fun setupBindings() {
-        previosWeekButton.setOnClickListener { updateWithDate(DateWeekUtil.previousWeekStart(currentDate)) }
+        previousWeekButton.setOnClickListener { updateWithDate(DateWeekUtil.previousWeekStart(currentDate)) }
         todayButton.setOnClickListener { updateWithDate(Date()) }
         nextWeekButton.setOnClickListener { updateWithDate(DateWeekUtil.nextWeekStart(currentDate)) }
     }
