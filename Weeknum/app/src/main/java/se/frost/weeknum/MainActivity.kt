@@ -1,13 +1,14 @@
 package se.frost.weeknum
 
+
+import android.app.Activity
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import se.frost.weeknum.util.DateWeekUtil
 import se.frost.weeknum.util.WeekFormatter
 import java.util.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : Activity() {
 
     private var currentDate = Date()
 
