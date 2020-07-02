@@ -1,11 +1,12 @@
 package se.frost.weeknum
 
-import android.support.v7.app.AppCompatActivity
+
+import android.app.Activity
 import android.os.Bundle
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
