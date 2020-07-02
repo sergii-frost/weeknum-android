@@ -16,7 +16,11 @@ class MainActivity : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setupBindings()
-        updateWithDate(currentDate)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        updateWithDate(Date())
     }
 
     private fun setupBindings() {
