@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorBackground">#58B3D6</color>
+    <color name="color_appwidget_bg">#6658B3D6</color>
 
     <color name="colorPrimary">@color/colorBackground</color>
     <color name="colorPrimaryDark">#0097A7</color>
